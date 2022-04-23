@@ -39,12 +39,12 @@ start_wg() {
 home_ip_prefix="192.168.18"
 ping_ip="8.8.8.8"
 
-if [ -e /data/misc/wireguard/auto-connect-config ]
+if [ -e /data/misc/wireguard/auto-connect.conf ]
 then
-    write_log "use /data/misc/wireguard/auto-connect-config"
-    . /data/misc/wireguard/auto-connect-config
+    write_log "use /data/misc/wireguard/auto-connect.conf"
+    . /data/misc/wireguard/auto-connect.conf
 else
-    write_log "/data/misc/wireguard/auto-connect-config not found, use default config"
+    write_log "/data/misc/wireguard/auto-connect.conf not found, use default config"
 fi
 
 write_log "home_ip_prefix: $home_ip_prefix"
