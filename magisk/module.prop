@@ -1,0 +1,6 @@
+id=wireguard-auto-connect
+name=WireGuard Command Line Tools with Auto-Connect
+version=1.0.0
+versionCode=10000
+author=dianqk
+description=Command line tools for WireGuard with Auto-Connect

@@ -1,0 +1,1 @@
+# magisk-wireguard-auto-connect
