@@ -18,18 +18,18 @@ notif() {
 
 stop_wg() {
     write_log "try to disconnect the wg0"
-    if [ -z $(/system/xbin/wg show) ]; then
+    if [ -z $(/system/bin/wg show) ]; then
         return
     fi
     write_log "run wg-quick down wg0"
-    /system/xbin/wg-quick down wg0
+    /system/bin/wg-quick down wg0
 }
 
 start_wg() {
     write_log "try to connect the wg0"
-    if [ -z $(/system/xbin/wg show) ]; then
+    if [ -z $(/system/bin/wg show) ]; then
         write_log "run wg-quick up wg0"
-        up_result=$(/system/xbin/wg-quick up wg0)
+        up_result=$(/system/bin/wg-quick up wg0)
         if [[ $? != '0' ]]; then
             notif $up_result
         fi
