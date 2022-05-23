@@ -1,6 +1,7 @@
 # WireGuard AutoConnect for Android
 
-This project toggles WireGuard's connection status by listening for ip changes using the `ip monitor` command.
+Auto turn on and off WireGuard by using the `ip monitor` command.
+Turn it off when you are home and on when you are away.
 
 ## Requirements
 
