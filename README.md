@@ -2,6 +2,10 @@
 
 This project toggles WireGuard's connection status by listening for ip changes using the `ip monitor` command.
 
+## Requirements
+
+Kernel supports WireGuard.
+
 ## Usage
 
 1. Uninstall WireGuard apk if you installed.
